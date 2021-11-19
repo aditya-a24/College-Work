@@ -5,100 +5,113 @@
   </head>
 
   <body>
-    <h3><u>STUDENT REGISTRATION FORM</u></h3>
+    <center>
+      <h3><u>STUDENT REGISTRATION FORM</u></h3>
+    </center>
 
-    <table cellpadding="10">
-      <tr>
-        <td>NAME</td>
-        <td><input type="text" autofocus /></td>
-      </tr>
+    <hr />
+    <br /><br />
 
-      <tr>
-        <td>DATE OF BIRTH</td>
-        <td><input type="date" /></td>
-      </tr>
+    <form>
+      <label>Date:</label>
+      <input type="date" />
 
-      <tr>
-        <td>EMAIL ID</td>
-        <td><input type="email" /></td>
-      </tr>
+      <label>Unique ID Number:</label>
+      <input type="text" />
 
-      <tr>
-        <td>MOBILE NUMBER</td>
-        <td>
-          <input type="tel" maxlength="10" placeholder="10 Digit Number" />
-        </td>
-      </tr>
-      <tr>
-        <td>GENDER</td>
-        <td>
-          Male<input type="radio" value="Male" /> Female<input
-            type="radio"
-            value="Female"
-          />
-        </td>
-      </tr>
+      <br /><br /><br />
 
-      <tr>
-        <td>ADDRESS</td>
-        <td><textarea cols="30" rows="3"></textarea></td>
-      </tr>
+      <label>Name of candidate:</label>
+      <input type="text" autofocus />
 
-      <tr>
-        <td>CITY</td>
-        <td><input type="text" /></td>
-      </tr>
+      <br /><br />
 
-      <tr>
-        <td>PIN CODE</td>
-        <td><input type="text" maxlength="6" /></td>
-      </tr>
+      <label>Email ID:</label>
+      <input type="email" placeholder="abc@xyz.com" />
 
-      <tr>
-        <td>STATE</td>
-        <td><input type="text" /></td>
-      </tr>
+      <br /><br />
 
-      <tr>
-        <td>COUNTRY</td>
-        <td><input type="text" placeholder="India" /></td>
-      </tr>
+      <label>Mobile No.:</label>
+      <input type="tel" placeholder="987-6543-210" />
 
-      <tr>
-        <td>HOBBIES</td>
-        <td>
-          Drawing<input type="checkbox" />Singing<input type="checkbox" />
-          Dancing<input type="checkbox" /> Sketching<input type="checkbox" />
-          Others<input type="checkbox" />
-          <input type="text" />
-        </td>
-      </tr>
+      <br /><br />
 
-      <tr>
-        <td>QUALIFICATION</td>
-        <td>
-          10th <input type="text" placeholder="%age or cgpa" /> 12th
-          <input type="text" placeholder="%age or cgpa" /> Graduation
-          <input type="text" placeholder="%age or cgpa" /> Masters
-          <input type="text" placeholder="%age or cgpa" />
-        </td>
-      </tr>
+      <label>Gender:</label>
+      <input type="radio" />Male <input type="radio" />Female
 
-      <tr>
-        <td>COURSE APPLIED FOR</td>
-        <td>
-          BCA <input type="radio" /> B.Com <input type="radio" /> B.Sc
-          <input type="radio" /> B.A. <input type="radio" /> B.Tech
-          <input type="radio" />
-        </td>
-      </tr>
+      <br /><br />
 
-      <tr>
-        <td align="center">
-          <input type="submit" />
-        </td>
-        <td><input type="reset" value="Reset" /></td>
-      </tr>
-    </table>
+      <label>School & Board:</label>
+      <input type="text" />
+
+      <br /><br />
+
+      <label>Stream(PCM/PCB/Arts/Commerce/etc):</label>
+      <input type="text" />
+
+      <br /><br />
+
+      <label>Percentage of Class 10th:</label>
+      <input type="text" placeholder="%age or cgpa" />
+      <label>Class 12th:</label>
+      <input type="text" placeholder="%age or cgpa" />
+      <label>Graduation:</label>
+      <input type="text" placeholder="%age or cgpa" />
+
+      <br /><br />
+
+      <label>Father's Name:</label>
+      <input type="text" />
+
+      <br /><br />
+
+      <label>Father's Mobile No.:</label>
+      <input type="text" placeholder="987-6543-210" />
+
+      <br /><br />
+
+      <label>Permanent Address:</label>
+      <textarea rows="2" cols="50"></textarea>
+
+      <br /><br />
+
+      <label>Course intersted in:</label>
+      <br />
+      <input type="checkbox" /><label><b>B.Tech.</b></label>
+      <input type="checkbox" /><label>ME</label> <input type="checkbox" /><label
+        >CIVIL</label
+      >
+      <input type="checkbox" /><label>IT</label> <input type="checkbox" /><label
+        >EEE</label
+      >
+      <input type="checkbox" /><label>ECE</label> <br /><br />
+      <input type="checkbox" /><label><b>M.Tech.</b></label>
+      <input type="checkbox" /><label>CS</label> <input type="checkbox" /><label
+        >CIVIL</label
+      >
+      <input type="checkbox" /><label>Thermal</label>
+      <input type="checkbox" /><label><b>DIPLOMA</b></label>
+      <input type="checkbox" /><label>EE</label> <input type="checkbox" /><label
+        >ME</label
+      >
+      <br /><br />
+      <input type="checkbox" /><label><b>BBA</b></label>
+      <input type="checkbox" /><label><b>BCA</b></label>
+      <input type="checkbox" /><label><b>HM</b></label>
+      <input type="checkbox" /><label><b>MBA</b></label>
+      <input type="checkbox" /><label><b>MCA</b></label>
+      <input type="checkbox" /><label><b>MHM</b></label>
+
+      <br /><br />
+
+      <label>How did you hear about us/Reference:</label>
+      <textarea rows="2" cols="50"></textarea>
+
+      <br /><br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <br />
+    <hr />
   </body>
 </html>

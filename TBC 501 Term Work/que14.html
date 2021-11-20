@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question 14</title>
+
+    <style>
+      #p1::after {
+        content: " Pseudo Element.";
+        color: red;
+      }
+
+      #p2::before {
+        content: "2. It is an example of ";
+        color: red;
+      }
+
+      #p3::first-letter {
+        color: green;
+        font-size: 200%;
+      }
+
+      #p4::first-line {
+        color: #4caf50;
+        font-family: cursive;
+        font-size: large;
+      }
+
+      ::marker {
+        color: blue;
+      }
+
+      ::selection {
+        color: black;
+        background-color: hsl(88, 100%, 50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Q14. A Program to implement pseudo elements in HTML.</h3>
+    <hr />
+    <br />
+    <p id="p1">1. It is an example of - "::after"</p>
+
+    <p id="p2">- "::before" Pseudo Element.</p>
+
+    <p id="p3">3. It is an example of - "::first-letter" Pseudo Element.</p>
+
+    <p id="p4">
+      4. It is an example of - "::first-line" Pseudo Element. <br />This is
+      second line.
+    </p>
+
+    <div id="p5">
+      <p>5. It is an example of - "::marker" Pseudo Element :-</p>
+      <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
+    </div>
+
+    <p id="p6">
+      6. It is an example of - "::selection" Pseudo Element, Select any Text of
+      this Page.
+    </p>
+    <br />
+    <hr />
+  </body>
+</html>

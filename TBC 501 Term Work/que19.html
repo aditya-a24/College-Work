@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script>
+      function FillBilling(f) {
+        if (f.billingtoo.checked == true) {
+          f.billingname.value = f.shippingname.value;
+          f.billingcity.value = f.shippingcity.value;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <b>Mailing Address</b>
+    <br /><br />
+    <form>
+      Name:
+      <input type="text" name="shippingname" />
+      <br />
+      City:
+      <input type="text" name="shippingcity" />
+      <br />
+      <input
+        type="checkbox"
+        name="billingtoo"
+        onclick="FillBilling(this.form)"
+      />
+      <em
+        >Check this box if Billing Address and Mailing Address are the same.</em
+      >
+      <p>
+        <b>Billing Address</b>
+        <br /><br />
+        Name:
+        <input type="text" name="billingname" />
+        <br />
+        City:
+        <input type="text" name="billingcity" />
+      </p>
+    </form>
+  </body>
+</html>

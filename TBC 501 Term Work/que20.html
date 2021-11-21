@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question 20</title>
+  </head>
+
+  <body>
+    <h3>
+      Q20. Write a JavaScript code to validate whether username and password
+      correct or not.
+    </h3>
+
+    <hr />
+
+    Username : <input type="text" name="" id="user" placeholder="admin" />
+    <br /><br />
+    Password : <input type="password" name="" id="pass" placeholder="12345" />
+    <br /><br />
+    <input type="button" value="Validate" onclick="check()" />
+
+    <script>
+      function check() {
+        let user = document.getElementById("user").value;
+        let pass = document.getElementById("pass").value;
+
+        if (user === "admin" && pass === "12345") {
+          document.write("Loged In");
+        } else {
+          alert("wrong Id or Password!!!! Try Again");
+        }
+      }
+    </script>
+  </body>
+</html>

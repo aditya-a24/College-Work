@@ -53,9 +53,35 @@
       <div id="container">
         <h2>Enter Any Number</h2>
         <input type="text" id="input" autofocus /><br /><br />
-        <input type="submit" value="Enter" id="btn" />
+        <input type="submit" value="Enter" id="btn" onclick="funAlert()" />
       </div>
     </center>
     <hr />
+
+    <script>
+      function funAlert() {
+        var value = parseInt(document.getElementById("input").value);
+        var flag = 0;
+        if (Number.isInteger(value)) {
+          if (value === 0 || value === 1) {
+            alert(value + " is not a prime number.");
+          } else {
+            for (var i = 2; i < value - 1; i++) {
+              if (value % i === 0) {
+                flag = 1;
+                break;
+              }
+            }
+            if (flag === 0) {
+              alert(value + " is a prime number.");
+            } else {
+              alert(value + " is not a prime number.");
+            }
+          }
+        } else {
+          alert("Please enter a valid number");
+        }
+      }
+    </script>
   </body>
 </html>
